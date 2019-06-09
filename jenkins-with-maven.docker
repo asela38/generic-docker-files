@@ -1,0 +1,11 @@
+
+FROM jenkins/jenkins:latest
+
+MAINTAINER asela38
+
+USER root
+
+RUN  apt-get update -y &&  apt-get install maven -y
+
+EXPOSE 8080 
+
